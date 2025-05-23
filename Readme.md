@@ -1,5 +1,10 @@
 # IntelliMatch AI - Assistente Inteligente de Recrutamento
 
+Observações: a pasta de dados não foi carregada para o github. Assim, para rodar a aplicação localmente é preciso criar uma pasta "data" e adicionar os três arquivos de dados.
+
+Link api GCP: https://intelligent-match-ai-frontend-143297127619.us-central1.run.app
+
+
 **Versão:** 0.1.5
 **Data da Última Atualização:** 21 de Maio de 2025
 
