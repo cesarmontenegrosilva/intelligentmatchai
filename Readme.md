@@ -144,18 +144,6 @@ Crie um arquivo chamado `.env` na raiz do projeto com o seguinte conteúdo, subs
 ``env
 OPENAI_API_KEY="sk-SuaChaveRealDaAPIOpenAIAqui"
 
-# Opcional: Sobrescrever modelos padrão definidos em config.py
-
-# EMBEDDING_MODEL_NAME="text-embedding-3-small"
-
-# LLM_MODEL_NAME="gpt-4o-mini"
-
-# Opcional: Configuração de CORS para o backend
-
-# CORS_ORIGINS_STR="http://localhost:8501,http://127.0.0.1:8501,https://seu-frontend-deployado.com"
-
-Adicione .env ao seu arquivo .gitignore.
-
 ## Dados de Entrada
 
 Os seguintes arquivos JSON são esperados na pasta data/:
