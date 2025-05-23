@@ -1,4 +1,4 @@
-# IntelliMatch AI - Assistente Inteligente de Recrutamento
+# Intelligent HR Match AI - Assistente Inteligente de Recrutamento
 
 Observações: a pasta de dados não foi carregada para o github. Assim, para rodar a aplicação localmente é preciso criar uma pasta "data" e adicionar os três arquivos de dados.
 
