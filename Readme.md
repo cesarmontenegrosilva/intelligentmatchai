@@ -6,7 +6,7 @@ Repositório Github: https://github.com/cesarmontenegrosilva/intelligentmatchai.
 
 Link api GCP: https://intelligent-match-ai-frontend-143297127619.us-central1.run.app
 
-Link para o Video de explicação: 
+Link para o Video de explicação: https://youtu.be/eZaKCNPmd5s
 
 
 **Versão:** 0.1.5
