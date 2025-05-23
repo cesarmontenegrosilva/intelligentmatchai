@@ -2,6 +2,8 @@
 
 Observações: a pasta de dados não foi carregada para o github. Assim, para rodar a aplicação localmente é preciso criar uma pasta "data" e adicionar os três arquivos de dados.
 
+Repositório Github: https://github.com/cesarmontenegrosilva/intelligentmatchai.git
+
 Link api GCP: https://intelligent-match-ai-frontend-143297127619.us-central1.run.app
 
 Link para o Video de explicação: 
