@@ -1,0 +1,30 @@
+# FastAPI e Servidor ASGI
+fastapi
+uvicorn[standard]
+
+# LangChain e componentes relacionados
+langchain
+langchain-openai  # Ou outro provedor de LLM, ex: langchain-anthropic
+langchain-community
+langchain-text-splitters # Para divisão de texto, se necessário
+langchain_chroma 
+
+# Vector Store (exemplo com FAISS e ChromaDB)
+faiss-cpu # Para vector store em memória/local
+chromadb # Para uma opção de vector store persistente
+
+# Gerenciamento de Variáveis de Ambiente
+python-dotenv
+
+# Processamento de Dados (opcional, mas útil)
+pandas
+jq  # Biblioteca Python para processar JSON com sintaxe jq
+
+# Testes
+pytest
+httpx # Para fazer requisições HTTP em testes e no Streamlit (alternativa ao requests)
+
+# Outras utilidades
+tiktoken # Para contagem de tokens com OpenAI
+langchain-chroma
+chromadb

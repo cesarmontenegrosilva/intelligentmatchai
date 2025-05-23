@@ -1,0 +1,42 @@
+# Arquivo de variáveis de ambiente (CONTÉM SEGREDOS!)
+.env
+
+# Pastas de ambiente virtual Python
+venv/
+.venv/
+env/
+ENV/
+*.pyenv
+
+# Arquivos compilados do Python e cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Banco de dados de vetores local (se você não quiser versioná-lo diretamente)
+# Se você sempre recria o DB a partir dos dados JSON, pode ser bom ignorar.
+# Se você quer versionar uma versão específica do DB, remova esta linha.
+vector_store_db/
+
+# Arquivos específicos do Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs (se você gerar arquivos de log)
+*.log
+logs/
+
+# Outros arquivos de build ou temporários
+build/
+dist/
+*.egg-info/
+
+# Ignorar toda a pasta de dados
+data/
+data_reduced/

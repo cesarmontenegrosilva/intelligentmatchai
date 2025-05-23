@@ -1,0 +1,37 @@
+# docker-compose.yml
+services:
+  backend:
+    build:
+      context: ./backend # <--- MUITO IMPORTANTE: Contexto agora é a pasta 'backend'
+      dockerfile: Dockerfile # Docker procurará 'Dockerfile' dentro de './backend'
+    container_name: intelligentmatch_ai_backend
+    ports:
+      - '8000:8000'
+    volumes:
+      # WORKDIR no Dockerfile do backend é /app.
+      # O código Python está em ./backend/app localmente.
+      # Mapeamos ./backend/app (local) para /app/app (container)
+      - ./backend/app:/app/app
+      # A pasta 'data' da raiz do projeto é mapeada para /app/data no container
+      # (settings.py dentro de backend/app/core/config.py ainda pode referenciar "data/arquivo.json")
+      - ./data:/app/data
+      - ./vector_store_db:/app/vector_store_db
+    env_file:
+      - .env # .env na raiz do projeto
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.frontend
+    container_name: intelligentmatch_ai_frontend
+    ports:
+      - '8501:8501'
+    depends_on:
+      - backend
+    environment:
+      FASTAPI_URL: http://backend:8000
+      STREAMLIT_SERVER_PORT: '8501'
+    volumes:
+      - ./frontend:/app
+    restart: unless-stopped

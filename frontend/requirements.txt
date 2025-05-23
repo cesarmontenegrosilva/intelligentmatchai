@@ -1,0 +1,2 @@
+streamlit
+requests # Para fazer requisições HTTP no Streamlit

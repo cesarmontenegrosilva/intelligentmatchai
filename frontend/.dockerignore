@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+.cache/
+.pytest_cache/
+.git/
+.gitignore
+local_dev_files/
+*.sqlite3 # Se você usar SQLite para algo que não quer na imagem
+*.DS_Store
+.env # Não copie o .env para a imagem; use variáveis de ambiente no deploy
+vector_store_db/ # Se você NÃO quer embutir o DB na imagem e vai usar um volume persistente
